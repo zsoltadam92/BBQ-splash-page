@@ -1,0 +1,50 @@
+@use 'util' as *;
+@use 'sass:color';
+
+.main {
+  &__form {
+    width: 73%;
+  }
+
+  &__input {
+    border: 1px solid #818181;
+    border-radius: 7px;
+    height: rem(37);
+    line-height: rem(37);
+    margin-bottom: rem(14);
+    display: block;
+    text-align: center;
+
+    &::placeholder {
+      text-align: center;
+    }
+  }
+
+  @include errorMessage(uppercase, top, -10);
+  @include errorMessage(length, bottom, 10);
+  @include errorMessage(email, bottom, 10);
+
+  
+  &__button {
+    background-image: linear-gradient(270deg, var(colors-gradient_start) 0%, var(colors-gradient_end) 100%);
+    border-radius: 7px;
+    height: rem(37);
+    border: none;
+    text-transform: uppercase;
+    margin-bottom: rem(14);
+    font-size: rem(10);
+    color: var(colors-white);
+    letter-spacing: rem(1.5);
+    cursor: pointer;
+    
+    &:hover {
+      background-image: linear-gradient(270deg, color.adjust(var(colors-gradient_start_2), $lightness: 6%,) 0%, color.adjust(var(colors-gradient_end), $lightness: 6%,) 100%);
+    }
+  }
+  
+  &__small {
+    color: var(colors-permission);
+    font-size: rem(15);
+
+  }
+}

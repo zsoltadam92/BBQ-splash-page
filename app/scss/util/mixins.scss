@@ -1,0 +1,25 @@
+@use 'config' as *;
+@use 'functions' as *;
+
+@mixin breakpoints_up($size) {
+  @media (min-width: $size){
+    @content;
+  }
+  
+}
+@mixin breakpoints_down($size) {
+  @media (max-width: $size){
+    @content;
+  }
+  
+}
+
+@mixin errorMessage($name,$position,$pixel) {
+  &__error--#{$name} {
+    margin-#{$position}: rem($pixel);
+    color: red;
+    display: none;
+    font-style: italic;
+  }
+}
+

@@ -1,0 +1,49 @@
+@use 'util' as *;
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  
+  @include breakpoints_up(var(breakpoints_up-medium)) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 40vh;
+  
+  @include breakpoints_up(var(breakpoints_up-medium)) {
+    width: 58.75%;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 rem(20);
+
+  @include breakpoints_up(var(breakpoints_up-medium)) {
+    width: 41.25%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+

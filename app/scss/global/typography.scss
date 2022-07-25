@@ -1,0 +1,26 @@
+@use 'util' as *;
+
+h1 {
+  font-size: rem(36);
+  font-weight: var(font-weights-light);
+
+  @include breakpoints_up(var(breakpoints_up-medium)) {
+    font-size: rem(56);
+  }
+}
+
+h2 {
+  font-size: rem(21);
+
+  @include breakpoints_up(var(breakpoints_up-medium)) {
+    font-size: rem(28);
+  }
+}
+
+h3 {
+  font-size: rem(18);
+
+  @include breakpoints_up(var(breakpoints_up-medium)) {
+    font-size: rem(23);
+  }
+}

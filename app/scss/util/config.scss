@@ -1,0 +1,36 @@
+$config: (
+  //640px,1150px,1400px
+  breakpoints_up: (
+    medium: 40em,
+    large: 71.875em,
+    xlarge: 87.5em,
+  ),
+
+  //639px,1149px,1399px
+  breakpoints_down: (
+    small: 39.9375em,
+    medium: 71.8125em,
+    large: 87.4375em,
+  ),
+
+  colors: (
+    'black': #404040,
+    'white': #fff,
+    'orange': #f18119,
+    details: #5A5A5A,
+    permission: #989898,
+    gradient_start: #ff713b,
+    gradient_start_2: #FF895D,
+    gradient_middle: #DF4E13,
+    gradient_end: #ffa51d,
+  ),
+
+  font: (
+    family: 'Source Sans Pro',
+    weights: (
+      light: 300,
+      regular: 400,
+      bold: 900,
+    ),
+  )
+)

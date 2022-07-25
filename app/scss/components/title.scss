@@ -1,0 +1,45 @@
+@use 'util' as *;
+
+.title {
+  text-align: center;
+  background: url(images/dark-ribs.webp) no-repeat;
+  background-size: cover;
+  color: var(colors-orange);
+  font-size: rem(36);
+
+  &__small {
+    
+    font-size: rem(10);
+    text-transform: uppercase;
+    letter-spacing: rem(1.5);
+    font-weight: var(font-weights-bold);
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: rem(7);
+      background: transparent linear-gradient(270deg, var(colors-gradient_start_2) 0%, var(colors-gradient_middle) 0%, var(colors-gradient_end) 100%) 0% 0% no-repeat padding-box;
+      display: block;
+      margin-bottom: rem(6);
+    }
+
+    @include breakpoints_up(var(breakpoints_up-medium)) {
+      position: absolute;
+      top: 0;
+    }
+    
+  }
+
+  &__main {
+    width: 81.5%;
+    color: var(colors-white);
+
+    &--bold {
+      font-weight: var(font-weights-bold);
+    }
+  }
+
+  &__subtitle {
+    text-transform: uppercase;
+  }
+}
