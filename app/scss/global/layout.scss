@@ -18,7 +18,6 @@ body {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  height: 40vh;
   
   @include breakpoints_up(var(breakpoints_up-medium)) {
     width: 58.75%;
