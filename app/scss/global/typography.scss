@@ -18,7 +18,7 @@ h2 {
 }
 
 h3 {
-  font-size: rem(18);
+  font-size: rem(16);
 
   @include breakpoints_up(var(breakpoints_up-medium)) {
     font-size: rem(23);
